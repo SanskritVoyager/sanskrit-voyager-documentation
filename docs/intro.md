@@ -2,10 +2,8 @@
 sidebar_position: 1
 ---
 
-# Introduction
+# Documentation Intro
 
 Welcome to **Sanskrit Voyager**
 
-This is the beta version for the documentation of the Sanskrit Voyager website, a web application to explore the Sanskrit literature (which is also in beta).
-
-You can read the documentation here or you can directly **[try Sanskrit Voyager immediately](https://sanskritvoyager.com)**.
+Or **try Sanskrit Voyager immediately** with **[voyage](https://sanskritvoyager.com)**.
