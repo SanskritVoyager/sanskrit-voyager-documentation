@@ -1,0 +1,208 @@
+/* DictionaryEntry.css */
+.dictEntry {
+  
+
+  max-width: 800px; /* remove this line? */
+  padding-bottom: 1rem; 
+
+  
+  /*
+   font-family: "Brill", "Gentium Plus", serif;
+     line-height: 1.5;
+       margin: 1em 0;
+    #c64242;
+    light-dark(var(--mantine-color-palette-0), var(--mantine-color-palette-0));
+
+    */
+
+}
+.dictItalic {
+  font-style: italic;
+}
+.dictBold {
+  font-weight: 600;
+}
+.dictParenthetical.dictItalic {
+  font-style: italic;
+}
+.dictParenthetical.dictBold {
+  font-weight: 600;
+}
+
+.dictDivision {
+    margin-bottom: 20px;
+
+
+}
+
+.dictDivision ul {
+  list-style-type: disc; /* Use disc bullets for the list */
+  padding-left: 20px; /* Add some padding to the left */
+}
+
+.dictDivision li {
+  margin-bottom: 10px; /* Add some space between list items */
+}
+
+.dictDivision ul {
+    list-style-type: disc; /* Use disc bullets for the list */
+    padding-left: 20px; /* Add some padding to the left */
+  }
+  
+  .dictDivision li {
+    margin-bottom: 10px; /* Add some space between list items */
+  }
+
+
+.dictHeadword {
+  color: light-dark(var(--mantine-color-palette-0), var(--mantine-color-palette-7));
+
+  font-weight: 600;
+}
+
+
+.dictGrammar {
+  font-style: italic;
+  color: #ac3e3e;
+  margin: 0 0.3em;
+}
+
+.dictSource {
+  font-style: normal;
+  color: light-dark(var(--mantine-color-palette-0), var(--mantine-color-palette-7));
+
+  
+}
+
+.dictEtymology {
+  font-style: italic;
+  color: #666;
+}
+
+.dictDefinition {
+  color: #000;
+}
+
+.dictName {
+    
+    color: #83358f;
+    cursor: pointer;
+}
+
+.dictGreek {
+  
+  color: light-dark(var(--mantine-color-palette-0), var(--mantine-color-palette-7));
+
+}
+
+.dictLanguage {
+
+    color: light-dark(var(--mantine-color-gray-8), var(--mantine-color-palette-1));
+    font-weight: 600; 
+    font-size: 14;
+
+}
+
+
+.dictSanskrit {
+  font-style: italic;
+  color: teal;
+  cursor: pointer;
+}
+
+.dictGrammar.dictSanskrit {
+    font-style: italic;
+    color: teal;
+    cursor: pointer;
+  }
+
+.dictSanskrit:hover {
+  text-decoration: underline;
+}
+
+.dictName:hover {
+    text-decoration: underline;
+  }
+
+
+  .dictParenthetical.dictAbbreviation {
+    color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-gray-6));
+}
+
+
+/* Additional utility classes */
+.dictParenthetical {
+    color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-gray-6));
+}
+
+.dictReference {
+  font-size: 0.9em;
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-5));
+
+}
+
+.dictCompound {
+  font-style: italic;
+  color: light-dark(var(--mantine-color-palette-0), var(--mantine-color-palette-7));
+
+}
+
+.dictAbbreviation {
+    font-style: normal;
+    color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-6));
+}
+
+
+  /* If you need to handle nested combinations 
+  .dictParenthetical.dictSanskrit,
+  .dictParenthetical.dictEtymology,
+  .dictParenthetical.dictGrammar {
+    color: #666;
+    
+    font-style: italic;
+  }
+
+bel colore:
+color: rgb(118, 38, 231);
+
+  Preserve other styles like italics */
+
+.dictParenthetical.dictSanskrit {
+
+    font-style: italic;
+    color: teal;
+    cursor: pointer;
+}
+
+
+.dictParenthetical.dictSource {
+    font-style: normal;
+    color: light-dark(var(--mantine-color-palette-0), var(--mantine-color-palette-7));
+
+    
+    /*
+    color: #c64242;*/
+  }
+
+  .dictParenthetical.dictGrammar{
+    font-style: italic;
+    color: #ac3e3e;
+    margin: 0 0.3em;
+  }
+
+  .dictParenthetical.dictName {
+
+
+    
+    color: #83358f;
+    cursor: pointer;
+    
+    
+  }
+
+
+  .dictGrammar.dictParenthetical.dictSanskrit {
+    font-style: italic;
+    color: teal;
+    cursor: pointer;
+  }
