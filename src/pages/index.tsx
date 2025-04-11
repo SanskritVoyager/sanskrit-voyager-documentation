@@ -24,6 +24,20 @@ function HomepageHeader() {
           </Link>
         </div>
       </div>
+    <div className ="gradient_bg">
+      <div className="gradientContainer">
+        <div className="g1">
+        </div>
+       </div>
+
+
+    </div>
+
+
+    
+
+
+
     </header>
   );
 }
