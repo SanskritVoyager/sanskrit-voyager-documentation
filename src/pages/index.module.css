@@ -1,13 +1,16 @@
+/* src/pages/index.module.css */
+
 /**
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
 
-.heroBanner {
+ .heroBanner {
   padding: 4rem 0;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */ /* Already set inline, keep or remove */
+  /* overflow: hidden; */  /* Already set inline, keep or remove */
+  /* Keeping them here is okay, but inline styles in the JSX take precedence */
 }
 
 @media screen and (max-width: 996px) {
@@ -20,18 +23,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-
-:root {
-  --color-bg1: rgb(108, 0, 162);
-  --color-bg2: rgb(0, 17, 82);
-  --color1: 18, 113, 255;
-  --color2: 221, 74, 255;
-  --color3: 100, 220, 255;
-  --color4: 200, 50, 50;
-  --color5: 180, 180, 50;
-  --color-interactive: 140, 100, 255;
-  --circle-size: 80%;
-  --blending: hard-light;
 }
