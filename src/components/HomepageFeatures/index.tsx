@@ -11,32 +11,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Search',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Search Sanskrit terms in multiple dictionaries exactly as they appear in the text, inflected and with Sandhi.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Read',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+      Read text in Sanskrit automatically <code>annotated</code>. When you click on a word, you will see its meaning and grammatical information.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Explore',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        With the corpus search, you can find Sanskrit terms or phrases in the entire corpus. Retrieve resoults grouped by books, and go directly to the entries.
       </>
     ),
   },

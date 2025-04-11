@@ -1,0 +1,32 @@
+
+.title-box {
+    /* --- Background and Blur --- */
+    background-color: rgba(0, 0, 0, 0.15); /* Semi-transparent background is REQUIRED for backdrop-filter */
+    backdrop-filter: blur(10px);          /* Apply the blur */
+    -webkit-backdrop-filter: blur(10px);  /* For Safari */
+  
+    /* --- Layout and Appearance --- */
+    display: inline-block; /* Make the box wrap its content */
+    padding: 2rem 3rem;    /* Add some padding inside the box */
+    border-radius: 15px;   /* Rounded corners */
+    /* Optional: add a subtle border */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Optional: add a subtle shadow */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  
+    /* Ensure text colors are still readable */
+    /* These might be inherited correctly, but you can force them */
+    /* color: white;  */
+  }
+  
+  /* Optional: Adjust title/subtitle styles specifically within the box if needed */
+  .title-box .hero__title {
+    /* Example: text-shadow: none; */
+    margin-bottom: 0.5rem; /* Adjust spacing */
+  }
+  
+  .title-box .hero__subtitle {
+     /* Example: */
+     margin-top: 0.5rem;
+     margin-bottom: 0; /* Remove default bottom margin if needed */
+  }

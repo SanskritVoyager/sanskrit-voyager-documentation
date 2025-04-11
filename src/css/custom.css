@@ -94,7 +94,11 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Target the hero banner on the homepage */
+.hero--primary {
+  background-color: transparent;
+}
+
+/* Target the hero banner on the homepage 
 .hero--primary {
   background: linear-gradient(300deg, #f8f8f7, #dd8c71, #008080);
   background-size: 180% 180%;
@@ -111,4 +115,46 @@
   100% {
     background-position: 0% 50%;
   }
+}
+  */
+  
+
+  .navbar {
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .footer {
+    border-top: 1px solid #dee2e6;
+  }
+
+
+  :root {
+    /* ... other variables ... */
+  
+    /* Change this value for the light mode background */
+    --ifm-background-color: #f5f4ee; /* Example: Light blue background */
+    --ifm-background-surface-color: #f3f3f0f; /* Optional: Adjust surface color if needed */
+  
+    /* ... other variables ... */
+  }
+
+
+/* Light Mode Footer Colors */
+.footer {
+  /* Color for general text in the footer (like copyright) */
+  --ifm-footer-color: #444444; /* Example: Dark gray for light mode */
+
+  /* Color for footer section titles (e.g., 'Docs', 'Community') */
+  --ifm-footer-title-color: #222222; /* Example: Slightly darker gray */
+
+  /* Color for links in the footer */
+  --ifm-footer-link-color: var(--ifm-color-primary); /* Example: Use primary color */
+  /* Or specify a custom color: */
+  /* --ifm-footer-link-color: #0066cc; */
+}
+
+/* Style for footer links on hover in light mode */
+.footer a:hover {
+   color: var(--ifm-link-hover-color); /* Use default hover or specify */
+   /* color: #004c99; */
 }
