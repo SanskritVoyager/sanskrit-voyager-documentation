@@ -6,4 +6,6 @@ sidebar_position: 1
 
 Welcome to **Sanskrit Voyager**
 
-Or **try Sanskrit Voyager immediately** with **[voyage](https://sanskritvoyager.com)**.
+This is a beta version of the documentation. It will be upgraded in the following days. 
+
+Or **try [Sanskrit Voyager immediately](https://sanskritvoyager.com)**.
