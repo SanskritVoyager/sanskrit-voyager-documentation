@@ -1,0 +1,19 @@
+.themeIcon {
+    color: var(--ifm-color-primary);
+    transition: transform 0.3s ease;
+  }
+  
+  .themeIcon:hover {
+    transform: rotate(12deg);
+  }
+  
+  /* Mode-specific styles */
+  .sunIcon {
+    /* Specific styles for sun icon */
+    color: #f9cb28;
+  }
+  
+  .moonIcon {
+    /* Specific styles for moon icon */
+    color: #6c8cd5;
+  }

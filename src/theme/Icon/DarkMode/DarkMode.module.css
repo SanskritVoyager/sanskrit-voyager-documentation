@@ -1,0 +1,31 @@
+.themeIcon {
+    color: var(--ifm-color-primary);
+    transition: transform 0.3s ease;
+  }
+  
+
+  
+  /* Mode-specific styles */
+  .sunIcon {
+    /* Specific styles for sun icon */
+    color: #f9cb28;
+  }
+  
+
+
+@keyframes expand-contract {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
+  .themeIcon:hover {
+    animation: expand-contract 0.5s ease-in-out;
+  }
