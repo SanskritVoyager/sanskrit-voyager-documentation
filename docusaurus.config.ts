@@ -9,6 +9,7 @@ const config: Config = {
   title: 'Sanskrit Voyager',
   tagline: 'Explore Sanskrit',
   favicon: 'img/faviconbackground.svg',
+  
 
   // Set the production url of your site here
   url: 'https://www.sanskritvoyager.com/',
@@ -39,10 +40,11 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          sidebarCollapsed: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl:
+            //'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -52,8 +54,8 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+         // editUrl:
+           // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -70,7 +72,11 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Sanskrit Voyager',
+
+      
+
+
+      // title: 'Sanskrit Voyager',
       logo: {
         alt: 'SanskritVoyagerLogo',
         src: 'img/faviconlight.svg',
@@ -82,15 +88,15 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://sanskritvoyager.com/',
           label: 'App',
-          position: 'right',
+          position: 'left',
         },
       ],
     },
-    footer: {
+    /*footer: {
       style: 'light',
       links: [
         {
@@ -133,8 +139,9 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `${new Date().getFullYear()} `,
     },
+    */
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

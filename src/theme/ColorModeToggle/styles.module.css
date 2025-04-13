@@ -1,6 +1,11 @@
 .toggle {
-  width: 2rem;
-  height: 2rem;
+  /* Keep Docusaurus size or adjust if needed */
+  width: 32px;
+  height: 32px;
+  /* Example using Mantine-like size: */
+  /* width: calc(1.75rem * var(--mantine-scale, 1)); */
+  /* height: calc(1.75rem * var(--mantine-scale, 1)); */
+  margin-left: 1rem; /* Adjust as needed */
 }
 
 .toggleButton {
@@ -10,12 +15,39 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  transition: background var(--ifm-transition-fast);
+  border-radius: 10%; /* Keep Docusaurus default circle */
+  /* transition: background var(--ifm-transition-fast); */ /* Original */
+  transition: background-color var(--ifm-transition-fast), border-color var(--ifm-transition-fast), color var(--ifm-transition-fast); /* Transition more properties */
+  cursor: pointer; /* From Mantine */
+  user-select: none; /* From Mantine */
+  box-sizing: border-box; /* From Mantine */
+  line-height: 1; /* From Mantine */
+  border: 1px solid var(--ifm-color-emphasis-300); /* Original */
+
+  /* Apply Mantine-like styles using Docusaurus variables */
+  /* --ai-bg: var(--mantine-color-default); -> use surface color */
+  /* --ai-color: var(--mantine-color-default-color); -> use base font color */
+  color: var(--ifm-font-color-base);
+  /* --ai-bd: calc(0.0625rem * var(--mantine-scale)) solid var(--mantine-color-default-border); -> use emphasis-300/400 */
 }
 
 .toggleButton:hover {
-  background: var(--ifm-color-emphasis-200);
+  /* background: var(--ifm-color-emphasis-200); */ /* Original */
+  /* --ai-hover: var(--mantine-color-default-hover); -> use emphasis-100/200 */
+  background: var(--ifm-color-emphasis-100);
+  border-color: var(--ifm-color-emphasis-500); /* Slightly darker border on hover */
+}
+
+/* Ensure dark mode uses appropriate variables */
+[data-theme='dark'] .toggleButton {
+  background-color: var(--ifm-background-surface-color); /* Will be dark */
+  color: var(--ifm-font-color-base); /* Will be light */
+  border: 1px solid var(--ifm-color-emphasis-300); /* Will be a dark mode border color */
+}
+
+[data-theme='dark'] .toggleButton:hover {
+  background: var(--ifm-color-emphasis-100); /* Dark mode hover */
+  border-color: var(--ifm-color-emphasis-400); /* Dark mode hover border */
 }
 
 [data-theme='light'] .darkToggleIcon,
@@ -25,4 +57,11 @@
 
 .toggleButtonDisabled {
   cursor: not-allowed;
+  opacity: 0.5; /* Add standard disabled opacity */
+  /* Optionally override hover styles for disabled */
+}
+
+.toggleButtonDisabled:hover {
+  background-color: var(--ifm-background-surface-color); /* Prevent hover effect */
+  border-color: var(--ifm-color-emphasis-300); /* Prevent hover effect */
 }

@@ -8,7 +8,7 @@ export default function IconLightMode({className, ...props}: Props): ReactNode {
   const {ref, ...iconProps} = props;
   
   return <IconSun 
-        size={24}
+        size={22}
         stroke={1.5} 
         className={`${classes.themeIcon} ${classes.moonIcon} ${className}`} 
         {...iconProps} 

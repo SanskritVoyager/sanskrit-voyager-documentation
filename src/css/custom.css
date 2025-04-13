@@ -64,7 +64,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  padding-left: 10rem !important; /* Adjust this value as needed */
+  padding-left: 14.5rem !important; /* Adjust this value as needed */
+}
+.col article  {
+  padding-right: 0rem !important; /* Adjust this value as needed */
+  margin-right: 0rem !important; /* Adjust this value as needed */
+
 }
 
 /* Target the doc item specifically */
@@ -76,17 +81,12 @@ h1, h2, h3, h4, h5, h6 {
 .markdown {
   padding-left: 1rem;
 }
+
 :root {
-  /* Override with a thinner caret icon */
-  --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"></path></svg>');
+  --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path stroke="rgba(0,0,0,0.5)" stroke-width="1" fill="none" d="M8 10L12 14L16 10" /></svg>');
 }
 
-
-/* Style the caret when the sublist is open (rotated) 
-.navbar-sidebar .menu__list-item--collapsed > .menu__link--sublist::after {
-  transform: rotate(90deg);
-}
-
+/*
 
 
 .menu__link--sublist-caret::after {*/
@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   /* Add your custom font to the font family */
-  --ifm-font-family-base: 'IndUni-P', system-ui, -apple-system, serif;
+  --ifm-font-family-base: 'Palatino', serif;
   --ifm-heading-font-family: 'Linux Biolinum', sans-serif;
 
   --ifm-background-color: #faf9f5;
@@ -151,7 +151,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [data-theme='dark'] {
-  --ifm-navbar-background-color: rgba(36, 37, 38, 1); /* Dark mode - semi-transparent dark */
+
+  --ifm-background-color: #262624 !important;
+  --ifm-navbar-background-color: #262624; /* Dark mode - semi-transparent dark */
   
 
 
@@ -164,6 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f5f4ed; /* Light mode background */
   /* Optional: remove default border if present */
   /* border-right: none; */
+  
 
 
   /* --- Default Shadow (from shadow-lg) --- */
@@ -180,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Target the same container for dark mode */
 [data-theme='dark'] .theme-doc-sidebar-container {
-  background-color: #1a4f4f; /* Dark mode background (adjust as needed) */
+  background-color: #1f1e1d; /* Dark mode background (adjust as needed) */
   /* Optional: remove default border in dark mode too */
   /* border-right: none; */
 }
@@ -220,13 +223,43 @@ h1, h2, h3, h4, h5, h6 {
     background-position: 0% 50%;
   }
 }
-  */
+ 
   
 
   .navbar {
     border-bottom: 1px solid #dee2e6;
   }
+     */
+
+@media (min-width: 997px) {
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /* This value should match your sidebar width */
+  width: 299px; /* Adjust based on your actual sidebar width */
+  background-color: #f5f4ed; /* Match your sidebar background */
+  z-index: -1; /* Place behind navbar content */
+  border-right: 1px solid #dee2e6; /* Optional: add a border to separate from sidebar */
+    /* inset | offset-x | offset-y | blur | spread | color */
+    box-shadow: inset -4px 0 6px -4px rgba(0, 0, 0, 0.04); /* Black at 4% opacity */
+
   
+}
+
+[data-theme='dark'] .navbar::before {
+
+  background-color: #1f1e1d;
+  border-right: 1px solid #3c3b38; /* Optional: add a border to separate from sidebar */
+
+
+}
+}
+
+
   .footer {
     border-top: 1px solid #dee2e6;
   }
@@ -251,4 +284,127 @@ h1, h2, h3, h4, h5, h6 {
 .footer a:hover {
    color: var(--ifm-link-hover-color); /* Use default hover or specify */
    /* color: #004c99; */
+}
+
+
+.sidebar_mhZE {
+   /* padding-top: 0 !important; Remove top padding */
+
+}
+
+
+/* Add these styles to center the content container */
+.docItemContainer {
+  /* Set a max-width for the content block */
+  max-width: 80ch; /* Example: Limit width to ~80 characters wide, adjust as needed */
+  /* Use auto margins to center the block horizontally */
+  margin-left: auto;
+  margin-right: auto;
+  /* Add some padding so text doesn't touch edges if container is narrow */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%; /* Ensure it tries to fill the max-width */
+}
+
+
+
+
+/* src/css/custom.css */
+
+/* --- Styling for ALL sidebar menu links (Normal State) --- */
+.menu__link {
+  /* Change text color */
+  color: #3D3D3A; /* Example: A slightly muted grey */
+  /* Use Infima variable for better theme compatibility */
+  /* color: var(--ifm-font-color-secondary); */
+
+  /* Change font weight */
+  font-weight: 500; /* Example: Make links slightly bolder */
+
+  /* Add padding */
+  padding-left: 1.5rem; /* Example: Increase left padding */
+
+  /* Remove default underline if desired (usually off by default in Docusaurus) */
+  /* text-decoration: none; */
+
+  /* Add transition for smooth hover/active effects */
+  transition: color 0.15s ease, background-color 0.15s ease, border-left-color 0.15s ease;
+}
+
+/* --- Styling for links on HOVER --- */
+.menu__link:hover {
+  /* Change text color on hover */
+  color: 
+  #ffa94d; /* Example: Use the theme's primary color */
+  background-color: transparent !important;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+
+
+  /* Change background color on hover
+  background-color: rgba(0, 0, 0, 0.05); /* Example: Subtle background highlight */
+}
+
+
+
+/* --- Styling for the ACTIVE menu link --- */
+.menu__link--active {
+  /* Change text color for the active link */
+  color: var(--ifm-color-primary); /* Example: Make active link use primary color */
+  /* Or a distinct color */
+  /* color: #008080; /* Teal */
+
+  /* Change font weight for the active link */
+
+  /* Change background color for the active link */
+  background-color: transparent !important; /* Example: Faint teal background */
+
+  /* Add a visual indicator (e.g., left border) */
+  border-left-width: 0px;
+  border-left-style: solid;
+  border-left-color: var(--ifm-color-primary); /* Match text color or use another */
+
+  /* Adjust padding to account for the border if needed */
+  /* padding-left: calc(1.5rem - 3px); */ /* Original padding minus border width */
+
+  /* Ensure active styles override hover styles if necessary */
+  /* Sometimes needed if hover also changes background/color */
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  transition: text-underline-offset 0.3s ease-in-out;
+}
+
+/* Optional: If hover shouldn't change the active link's style */
+.menu__link--active:hover {
+  /* Keep the active text color */
+  filter: brightness(1.2);
+
+}
+
+
+/* --- Dark Mode Adjustments (using Infima's data attribute) --- */
+/* You might not need specific dark mode rules if you use Infima variables */
+/* But if you hardcode colors, you'll need this: */
+
+[data-theme='dark'] .menu__link {
+  color: #bbb; /* Lighter grey for dark mode */
+}
+
+[data-theme='dark'] .menu__link:hover {
+  background-color: rgba(255, 255, 255, 0.08); /* Subtle white background highlight */
+  /* Primary color variable should work automatically */
+}
+
+[data-theme='dark'] .menu__link--active {
+  /* Use primary color variable, or define a specific dark mode active color */
+  color: var(--ifm-color-primary);
+  background-color: rgba(0, 128, 128, 0.2); /* Slightly stronger teal background for dark */
+  border-left-color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .menu__link--active:hover {
+  /* Keep dark mode active styles on hover */
+  color: var(--ifm-color-primary);
+  background-color: rgba(0, 128, 128, 0.2);
+  border-left-color: var(--ifm-color-primary);
 }

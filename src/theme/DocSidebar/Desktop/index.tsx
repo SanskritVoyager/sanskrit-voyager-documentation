@@ -5,6 +5,7 @@ import Logo from '@theme/Logo';
 import CollapseButton from '@theme/DocSidebar/Desktop/CollapseButton';
 import Content from '@theme/DocSidebar/Desktop/Content';
 import type {Props} from '@theme/DocSidebar/Desktop';
+import VoyagerLogo from '@site/src/components/HomepageFeatures/VoyagerLogo';
 
 import styles from './styles.module.css';
 
@@ -23,7 +24,6 @@ function DocSidebarDesktop({path, sidebar, onCollapse, isHidden}: Props) {
         hideOnScroll && styles.sidebarWithHideableNavbar,
         isHidden && styles.sidebarHidden,
       )}>
-      {hideOnScroll && <Logo tabIndex={-1} className={styles.sidebarLogo} />}
       <Content path={path} sidebar={sidebar} />
       {hideable && <CollapseButton onClick={onCollapse} />}
     </div>

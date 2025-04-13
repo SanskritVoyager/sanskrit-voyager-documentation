@@ -6,7 +6,13 @@
 
   
   /* Mode-specific styles */
+
   .sunIcon {
+    /* Specific styles for sun icon */
+    color: #666;
+  }
+  
+  .sunIcon:hover {
     /* Specific styles for sun icon */
     color: #f9cb28;
   }

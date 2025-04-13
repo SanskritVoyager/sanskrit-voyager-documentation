@@ -10,6 +10,7 @@ import SearchBar from '@theme/SearchBar';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
 import NavbarSearch from '@theme/Navbar/Search';
+import VoyagerLogo from '@site/src/components/HomepageFeatures/VoyagerLogo';  
 
 import styles from './styles.module.css';
 
@@ -66,18 +67,34 @@ export default function NavbarContent(): ReactNode {
     <NavbarContentLayout
       left={
         // TODO stop hardcoding items?
+        // <NavbarLogo />
+        //           <NavbarItems items={leftItems} />
+
         <>
+           
+           <a
+            href="https://www.sanskritvoyager.com/"
+            target="_blank" // Optional: Open in new tab
+            rel="noopener noreferrer" // Recommended for security when using target="_blank"
+            className={styles.logoLink} // Optional: Add a class for specific link styling if needed
+            aria-label="Sanskrit Voyager App Home" // Accessibility: Describe the link's purpose
+          >
+            <VoyagerLogo className={styles.voyagerLogo} size={35} />
+          </a>
+           <NavbarColorModeToggle className={styles.colorModeToggle} />
+
           {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
-          <NavbarLogo />
-          <NavbarItems items={leftItems} />
+          
         </>
       }
       right={
         // TODO stop hardcoding items?
         // Ask the user to add the respective navbar items => more flexible
+        //           <NavbarItems items={rightItems} />
+
         <>
-          <NavbarItems items={rightItems} />
-          <NavbarColorModeToggle className={styles.colorModeToggle} />
+        <NavbarItems items={leftItems} />
+        
           {!searchBarItem && (
             <NavbarSearch>
               <SearchBar />

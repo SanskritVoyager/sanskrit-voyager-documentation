@@ -4,9 +4,6 @@ title: Text Analysis Tool
 sidebar_position: 2
 ---
 
-
-## Text Analysis
-
 The website provide an advanced text-analysis/text reader tool, which can be used either on the corpus of the website or just pasting one’s own text. 
 
 This part of the guide is about using it on one’s own text. 

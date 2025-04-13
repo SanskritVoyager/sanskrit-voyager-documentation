@@ -4,9 +4,9 @@ sidebar_position: 5
 
 # About
 
-Welcome to **Sanskrit Voyager**
+Welcome to **Sanskrit Voyager**, a web application to explore the Sanskrit literature. 
 
-Congratulations on finding the website! it should not be indicised on Google at the moment! 
+Congratulations on finding the website! it should not be indexed on Google at the moment! 
 
 This is a beta version of the documentation. It will be upgraded in the following days. 
 
