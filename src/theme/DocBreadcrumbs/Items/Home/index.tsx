@@ -8,9 +8,8 @@ import styles from './styles.module.css';
 
 export default function HomeBreadcrumbItem(): ReactNode {
 
-  // const homeHref = useBaseUrl('/');
+  const homeHref = useBaseUrl('/');
 
-  const homeHref = "https://www.sanskritvoyager.com/documentation/docs/intro";
 
   return (
     <li className="breadcrumbs__item">
