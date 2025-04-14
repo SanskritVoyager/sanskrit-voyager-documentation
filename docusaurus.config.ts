@@ -15,7 +15,7 @@ const config: Config = {
   url: 'https://www.sanskritvoyager.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/documentation/',
+  baseUrl: '/docs/',
   
 
   // GitHub pages deployment config.
@@ -41,6 +41,8 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           sidebarCollapsed: false,
+          routeBasePath: '/',
+
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
