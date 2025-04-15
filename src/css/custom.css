@@ -72,6 +72,26 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+
+@media (max-width: 997px) {
+  .container {
+    padding-left: 6rem !important; /* Adjust this value as needed */
+    padding-right: 6rem !important; /* Adjust this value as needed */
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 2rem !important; /* Adjust this value as needed */
+    padding-right: 2rem !important; /* Adjust this value as needed */
+
+  }
+}
+
+
 /* Target the doc item specifically */
 .docItemContainer {
   padding-left: 1.5rem;
@@ -115,14 +135,6 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 */
-@media (max-width: 768px) {
-  .container {
-    padding-left: 2rem !important; /* Adjust this value as needed */
-    padding-right: 2rem !important; /* Adjust this value as needed */
-
-  }
-}
-
 
 
 

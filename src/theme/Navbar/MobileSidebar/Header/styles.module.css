@@ -1,0 +1,16 @@
+
+.logoLink {
+    color: inherit; /* Prevents the link color from affecting the logo */
+    text-decoration: none; /* Removes the default underline */
+    display: inline-flex; /* Or inline-block - helps the link wrap the logo correctly */
+    align-items: center; /* Useful if the link adds extra height */
+    line-height: 1; /* Prevents link line-height from adding space */
+  }
+  
+  /* Ensure hover state doesn't add underline or change color */
+  .logoLink:hover {
+    color: #ffa94d;
+    text-decoration: none;
+  }
+  
+  

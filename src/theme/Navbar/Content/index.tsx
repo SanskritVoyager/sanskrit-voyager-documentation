@@ -71,6 +71,8 @@ export default function NavbarContent(): ReactNode {
         //           <NavbarItems items={leftItems} />
 
         <>
+          {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
+
            
            <a
             href="https://www.sanskritvoyager.com/"
@@ -83,7 +85,6 @@ export default function NavbarContent(): ReactNode {
           </a>
            <NavbarColorModeToggle className={styles.colorModeToggle} />
 
-          {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
           
         </>
       }
