@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Make sure the article content has breathing room */
 .markdown {
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }
 
 :root {
@@ -331,7 +331,6 @@ h1, h2, h3, h4, h5, h6 {
   /* color: var(--ifm-font-color-secondary); */
 
   /* Change font weight */
-  font-weight: 500; /* Example: Make links slightly bolder */
 
   /* Add padding */
   padding-left: 1.5rem; /* Example: Increase left padding */
@@ -348,7 +347,7 @@ h1, h2, h3, h4, h5, h6 {
   /* Change text color on hover */
   color: 
   #ffa94d; /* Example: Use the theme's primary color */
-  background-color: transparent !important;
+  background-color: #f8f9fa;
   text-decoration: underline;
   text-underline-offset: 6px;
 
@@ -369,12 +368,12 @@ h1, h2, h3, h4, h5, h6 {
   /* Change font weight for the active link */
 
   /* Change background color for the active link */
-  background-color: transparent !important; /* Example: Faint teal background */
 
   /* Add a visual indicator (e.g., left border) */
   border-left-width: 0px;
   border-left-style: solid;
   border-left-color: var(--ifm-color-primary); /* Match text color or use another */
+  background-color: transparent !important;
 
   /* Adjust padding to account for the border if needed */
   /* padding-left: calc(1.5rem - 3px); */ /* Original padding minus border width */
@@ -390,6 +389,8 @@ h1, h2, h3, h4, h5, h6 {
 .menu__link--active:hover {
   /* Keep the active text color */
   filter: brightness(1.2);
+  background-color: #f8f9fa !important;
+
 
 }
 
@@ -400,23 +401,67 @@ h1, h2, h3, h4, h5, h6 {
 
 [data-theme='dark'] .menu__link {
   color: #bbb; /* Lighter grey for dark mode */
+  font-size: 14px;
 }
 
 [data-theme='dark'] .menu__link:hover {
-  background-color: rgba(255, 255, 255, 0.08); /* Subtle white background highlight */
+  background-color: #2e2e2e; /* Subtle white background highlight */
   /* Primary color variable should work automatically */
 }
 
 [data-theme='dark'] .menu__link--active {
   /* Use primary color variable, or define a specific dark mode active color */
   color: var(--ifm-color-primary);
-  background-color: rgba(0, 128, 128, 0.2); /* Slightly stronger teal background for dark */
   border-left-color: var(--ifm-color-primary);
+  background-color: #2e2e2e !important; /* Subtle white background highlight */
+
 }
 
 [data-theme='dark'] .menu__link--active:hover {
   /* Keep dark mode active styles on hover */
   color: var(--ifm-color-primary);
-  background-color: rgba(0, 128, 128, 0.2);
+  background-color: #2e2e2e;
   border-left-color: var(--ifm-color-primary);
 }
+
+.navbar .navbar__link {
+  color: var(--ifm-navbar-link-color);
+  transition: color 0.15s ease; /* Smooth transition */
+  font-size: 14px;
+  border-radius: 10%;
+
+}
+
+
+.navbar .navbar__link:hover {
+  color: var(--ifm-navbar-link-hover-color);
+  background-color: #f8f9fa;
+  text-decoration: none;
+}
+
+.navbar .navbar__link--active {
+  color: var(--ifm-color-primary);
+}
+
+/* --- Dark Mode Adjustments (Optional - Infima variables often handle this) --- */
+[data-theme='dark'] .navbar .navbar__link {
+  color: #c9c9c9;
+  border-radius: 10%;
+  font-size: 14px;
+  /* color: #eee; */ /* Example if Infima variable isn't enough */
+}
+
+[data-theme='dark'] .navbar .navbar__link:hover {
+  background-color: #2e2e2e;
+  /* color: #fff; */ /* Example */
+}
+
+[data-theme='dark'] .navbar .navbar__link--active {
+  color: var(--ifm-color-primary); /* Primary color usually works */
+}
+
+.breadcrumbs__link {
+
+  border-radius: 10%;
+}
+
