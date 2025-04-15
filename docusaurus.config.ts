@@ -8,7 +8,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Sanskrit Voyager',
   tagline: 'Explore Sanskrit',
-  favicon: 'img/faviconbackground.svg',
+  favicon: 'img/faviconbackground.png',
   
 
   // Set the production url of your site here
