@@ -22,10 +22,10 @@ export default function NavbarMobileSidebarSecondaryMenu(): ReactNode {
   const secondaryMenu = useNavbarSecondaryMenu();
   return (
     <>
-      {/* edge-case: prevent returning to the primaryMenu when it's empty */}
+      {/* edge-case: prevent returning to the primaryMenu when it's empty 
       {!isPrimaryMenuEmpty && (
         <SecondaryMenuBackButton onClick={() => secondaryMenu.hide()} />
-      )}
+      )} */}
       {secondaryMenu.content}
     </>
   );

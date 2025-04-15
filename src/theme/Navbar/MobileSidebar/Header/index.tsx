@@ -40,6 +40,8 @@ export default function NavbarMobileSidebarHeader(): ReactNode {
             <VoyagerLogo className={styles.voyagerLogo} size={35} />
           </a>
       <CloseButton />
+
+
     </div>
   );
 }

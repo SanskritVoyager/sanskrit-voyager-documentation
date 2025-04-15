@@ -5,6 +5,7 @@
     display: inline-flex; /* Or inline-block - helps the link wrap the logo correctly */
     align-items: center; /* Useful if the link adds extra height */
     line-height: 1; /* Prevents link line-height from adding space */
+    margin-left: 1rem;
   }
   
   /* Ensure hover state doesn't add underline or change color */

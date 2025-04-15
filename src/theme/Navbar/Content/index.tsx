@@ -79,12 +79,12 @@ export default function NavbarContent(): ReactNode {
             target="_blank" // Optional: Open in new tab
             rel="noopener noreferrer" // Recommended for security when using target="_blank"
             className={styles.logoLink} // Optional: Add a class for specific link styling if needed
-            aria-label="Sanskrit Voyager App Home" // Accessibility: Describe the link's purpose
+            aria-label="Sanskrit Voyager App Home" // Accessibility: Describe the link's purpose // reference1
           >
             <VoyagerLogo className={styles.voyagerLogo} size={35} />
           </a>
-           <NavbarColorModeToggle className={styles.colorModeToggle} />
 
+           <NavbarColorModeToggle className={styles.colorModeToggle} />
           
         </>
       }
@@ -94,6 +94,7 @@ export default function NavbarContent(): ReactNode {
         //           <NavbarItems items={rightItems} />
 
         <>
+
         <NavbarItems items={leftItems} />
         
           {!searchBarItem && (

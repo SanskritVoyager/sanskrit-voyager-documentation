@@ -16,7 +16,8 @@ export default function MobileSidebarToggle(): ReactNode {
       })}
       aria-expanded={shown}
       className="navbar__toggle clean-btn"
-      type="button">
+      type="button"
+      style={{marginLeft: '1.5rem'}}>
       <IconMenu />
     </button>
   );
