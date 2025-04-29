@@ -4,7 +4,7 @@ title: Sources
 sidebar_position: 6
 ---
 
-This page describes the sources used in building the application. 
+This section describes the sources used in building the application. 
 
 ### Dictionaries
 
@@ -33,4 +33,21 @@ It is currently possible to download the file from the *public* folder, even if 
 
 The full text search uses the book present in the public github repository of **Buddhanexus** to which I am more than indebted. They can be downloaded [here](https://github.com/BuddhaNexus/segmented-sanskrit). 
 
+
+### Python Libraries 
+
+This application would not be possible without the great contributions of the Sanskrit computational linguistic community. I have drawn inspiration by all the websites online. I list here just the works that are currently being used. 
+
+**CLS inflect** for the inflection tables: [https://github.com/sanskrit-lexicon/csl-inflect](https://github.com/sanskrit-lexicon/csl-inflect)
+
+The **Sanskrit Parser** library handles part of the Sandhi Splitting: [https://github.com/kmadathil/sanskrit_parser?tab=readme-ov-file](https://github.com/kmadathil/sanskrit_parser?tab=readme-ov-file)
+
+### BYT-5 Model
+
+I list here separately the BYT5 model for Sanskrit [https://huggingface.co/buddhist-nlp/byt5-sanskrit](https://huggingface.co/buddhist-nlp/byt5-sanskrit), as it elegantly solves the tokenisation bottleneck that the conventional LLMs were having. 
+
+>**One Model is All You Need: ByT5-Sanskrit, a Unified Model for Sanskrit NLP Tasks**
+>[Sebastian Nehrdich](https://arxiv.org/search/cs?searchtype=author&query=Nehrdich,+S), [Oliver Hellwig](https://arxiv.org/search/cs?searchtype=author&query=Hellwig,+O), [Kurt Keutzer](https://arxiv.org/search/cs?searchtype=author&query=Keutzer,+K)
+>
+>[https://arxiv.org/abs/2409.13920](https://arxiv.org/abs/2409.13920)
 
