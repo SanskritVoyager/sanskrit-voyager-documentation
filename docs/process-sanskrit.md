@@ -10,7 +10,7 @@ sidebar_position: 5
 
 The library has two main use cases: 
 
-1. **Dictionary search:** multi dictionary lookup with grammatical annotation for words exactly as they are written in texts: in **any transliteration format, inflected, compounded and with sandhi**. x
+1. **Dictionary search:** multi dictionary lookup with grammatical annotation for words exactly as they are written in texts: in **any transliteration format, inflected, compounded and with sandhi**. 
 2. **Automatic Text Annotation:** generate automatically version of Sanskrit texts without sandhi and with split compounds, with grammatical annotations and dictionary entries for each word. 
 
 The architecture of the library is based on a cascading approach to Sanskrit text analysis, as described in our NAACL 2025 paper: [*`Accessible Sanskrit: A Cascading System for Text Analysis and Dictionary Access.`*](https://aclanthology.org/2025.alp-1.5/)
