@@ -26,7 +26,7 @@ The library is one of the main components powering up the [***Sanskrit Voyager**
 To install the library use the standard *pip install process-sanskrit* command, then call ***update-ps-database*** in the terminal to setup the database. 
 
 ```bash
-pip install process-sanskrit
+pip install process-sanskrit[gensim]
 update-ps-database
 ```
 
@@ -37,13 +37,24 @@ update-ps-database
 
 ## if inside jupyter or colab use:
 
-!pip install process-sanskrit
+!pip install process-sanskrit[gensim]
 !update-ps-database
 
 ```
 :::warning
 *only the **transliterate** function works without the database!*
 :::
+
+For the experimental version with byt5:
+
+```python
+
+## if inside jupyter or colab use:
+
+!pip install process-sanskrit[byt5]
+!update-ps-database
+
+```
 
 ## Process Function:
 

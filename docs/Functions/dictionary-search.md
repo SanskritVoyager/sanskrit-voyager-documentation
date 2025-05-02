@@ -7,18 +7,17 @@ sidebar_position: 1
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+*Transliteration, inflection and sandhi insentive multi dictionary search.* 
 
 The purpose of the dictionary search is to search words exactly as they appear in the books.
-
-***Words can be searched inflected, sandhi-ed, compounded, in any transliteration format.*** 
-
-Searching with no diacritics is also supported for non-inflected matches. 
 
 ## Basic Usage
 
 To use the dictionary search, type on the upper search bar or press *ctrl + k* (or *cmd + k* on Mac) and type. 
 
 *Try typing 'eṣyāmi' or 'eSyAmi' or 'samskara' and see what happens!*
+
+Searching with no diacritics is supported for non-inflected queries. 
 
 <Tabs className="unique-tabs">
   <TabItem value="Search Result"> ![SearchResult](/img/SearchResult.png)</TabItem>
