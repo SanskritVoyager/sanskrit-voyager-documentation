@@ -13,7 +13,7 @@ The purpose of the dictionary search is to search words exactly as they appear i
 
 ## Basic Usage
 
-To use the dictionary search, type on the upper search bar or press *ctrl + k* (or *cmd + k* on Mac) and type. 
+To use the dictionary search, type on the upper search bar or press *ctrl + k* (or *cmd + k* on Mac) and type. The query is automatically searched. For compounds, scroll down to see the following entries. 
 
 *Try typing 'eṣyāmi' or 'eSyAmi' or 'samskara' and see what happens!*
 
