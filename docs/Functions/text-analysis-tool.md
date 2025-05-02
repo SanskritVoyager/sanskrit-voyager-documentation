@@ -4,13 +4,34 @@ title: Text Analysis Tool
 sidebar_position: 2
 ---
 
-The website provide an advanced text-analysis/text reader tool, which can be used either on the corpus of the website or just pasting one’s own text. 
+# Text Analysis Tool
 
-This part of the guide is about using it on one’s own text. 
+Transforms ordinary Sanskrit text into an interactive, analyzable format.
 
-To analyse text the first step is to copy it in the text input on the navbar on the left. 
+### Analyzing Your Own Text
 
-1. The text is automatically transliterated to the desired format and displayed in the center of the page. The clipboard icon can be used to save the transliterated text. 
-2. Each word on the text is now clickable. On click it renders the text analysis of the text.
-3. When clicked, words are processed into list of roots, which are displayed under the word. In case of multiple possible entries, they are displayed under each other. 
-4. Clicking on each word, it links for the grammatical analysis and dictionary entries of the word on the right side of the screen.
+1. Navigate to the 'Write Text Here' section of the Navbar. 
+2. Paste or type your Sanskrit text (in any transliteration scheme) in the text input. 
+3. Click on any word to show the roots and access dictionary entries for the word (or words for compounds).
+
+*Your text will now appear in the central panel, now fully interactive!*
+
+![TextAnalysis](/img/TextAnalysis.png)
+
+In the example image a passage from the yoga sutra is pasted in the text input in IAST format, and is automatically transliterated to *Devanagari*. 'cittavṛttinirodhaḥ' is clicked, and automatically split into 'cittavṛtti' and 'nirodha'. Dictionary entries and grammatical information are retrieved for both the words. 
+
+
+:::note
+
+Since words in compounds are not inflected, they result in the vocative case. 
+
+:::
+
+
+### Transliteration Options
+
+- Select your preferred transliteration scheme from the dropdown menu (IAST, Devanagari, Harvard-Kyoto, etc.)
+- The entire text will be automatically converted to your selected scheme
+- Use the clipboard icon to copy the transliterated text for use elsewhere
+
+
