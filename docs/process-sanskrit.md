@@ -25,8 +25,16 @@ The library is one of the main components powering up the [***Sanskrit Voyager**
 
 To install the library use the standard *pip install process-sanskrit* command, then call ***update-ps-database*** in the terminal to setup the database. 
 
+Use the optional dependency download to select the version with 'gensim' or the experimental version that uses the BYT5 model. 
+
+A virtual enviroment or docker is highly recommended to use gensim, as it downgrades *numpy*. 
+
 ```bash
 pip install process-sanskrit[gensim]
+update-ps-database
+
+or
+pip install process-sanskrit[byt5]
 update-ps-database
 ```
 
