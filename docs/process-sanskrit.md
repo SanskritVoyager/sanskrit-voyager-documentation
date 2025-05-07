@@ -227,4 +227,15 @@ print(ps.dict_search(['pratiprasava', 'saṃskāra'], 'gra', 'bhs'))
 :::
 
 
+### ProcessBYT5
+
+Experimental function -- preprocess the text with BYT5 then sends it to the process function after for stemming and grammatical results. 
+
+'''python
+!pip install process-sanskrit[byt5]
+!update-ps-database
+
+from process_sanskrit.functions import processBYT5
+ps.process(‘śrutam āgamavijñānaṃ tat sāmānyaviṣayam’)
+'''
 
