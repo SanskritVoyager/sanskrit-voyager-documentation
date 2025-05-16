@@ -106,40 +106,22 @@ h1, h2, h3, h4, h5, h6 {
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path stroke="rgba(0,0,0,0.5)" stroke-width="1" fill="none" d="M8 10L12 14L16 10" /></svg>');
 }
 
-.menu__link--sublist-caret[aria-expanded='false']::after {
+/* Target the pseudo-element where Docusaurus places the icon */
+.menu__link--sublist::after {
+  /* Apply the transition to the pseudo-element itself for smooth rotation */
+  transition: transform 0.2s ease-in-out; /* Corrected syntax: use '.' not ',' and add 's' for seconds */
+  /* Default state (expanded) - no rotation or explicitly 0 */
+  transform: rotate(0deg);
+}
+
+/* Target the pseudo-element when the link is collapsed */
+.menu__link--sublist[aria-expanded='false']::after {
+  /* Rotate the icon when collapsed */
+  /* Common practice is -90deg for a down arrow to become a right arrow */
   transform: rotate(360deg);
-  transition: all 0,5 ease-in-out;
+  /* Or use 180deg if you want your down arrow to become an up arrow */
+  /* transform: rotate(180deg); */
 }
-
-/*
-
-
-.menu__link--sublist-caret::after {*/
-  /* Reset the existing icon 
-  background: none !important;
-  /* Create a thinner caret using a simple border technique 
-  content: '';
-  border-style: solid;
-  border-width: 0.15rem 0.15rem 0 0;
-  display: inline-block;
-  height: 0.4rem;
-  width: 0.4rem;
-  position: relative;
-  transform: rotate(135deg) translateY(-50%);
-  transition: transform var(--ifm-transition-fast) var(--ifm-transition-timing-default);
-}
-
-/* Make it rotate when expanded 
-.menu__link--sublist-caret[aria-expanded='true']::after {
-  transform: rotate(-45deg) translateY(-50%);
-}
- Remove potential default caret from desktop styles if they interfere */
-/* You might need this if desktop styles are bleeding into mobile */
-/*
-.navbar-sidebar .menu__caret:before {
-  display: none;
-}
-*/
 
 
 
@@ -240,6 +222,7 @@ h1, h2, h3, h4, h5, h6 {
     background-position: 0% 50%;
   }
 }
+
  
   
 
@@ -247,6 +230,34 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #dee2e6;
   }
      */
+
+.menu__caret {
+
+  /* Remove any default backgrounds */
+  background-color: transparent !important;
+}
+
+.menu__caret::before {
+  transform: rotate(-180deg);
+}
+
+/* Rotate when collapsed */
+.menu__caret[aria-expanded='false']::before {
+  transform: rotate(0); 
+}
+
+
+
+@media (max-width: 997px) {
+  .navbar {
+    border-bottom: 1px solid #dee2e6;
+  }
+  [data-theme='dark'] .navbar {
+    border-bottom: 1px solid #424242;
+  }
+}
+
+
 
 @media (min-width: 997px) {
 

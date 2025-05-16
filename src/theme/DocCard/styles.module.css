@@ -1,0 +1,69 @@
+.cardContainer {
+  --ifm-link-color: var(--ifm-color-emphasis-800);
+  --ifm-link-hover-color: var(--ifm-color-emphasis-700);
+  --ifm-link-hover-decoration: none;
+
+  border: 1px solid #e6e6e6;
+  transition: all var(--ifm-transition-fast) ease;
+  transition-property: border, box-shadow;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.cardContainer:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.cardContainer *:last-child {
+  margin-bottom: 0;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+}
+
+.cardDescription {
+  font-size: 0.8rem;
+}
+
+
+/* Base styling for all card icons */
+.cardIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+
+  margin-bottom: 12px;
+  color: white;
+}
+
+/* Icon type-specific background colors */
+.folderIcon {
+  background-color: #d2876e;
+}
+
+.searchIcon {
+  background-color: #d2876e;
+}
+
+.analyzeIcon {
+  background-color: #d2876e;
+}
+
+.learnIcon {
+  background-color: #d2876e;
+}
+
+.defaultIcon {
+  background-color: #d2876e;
+}
+
+/* Optional hover effect */
+.cardContainer:hover .cardIcon {
+  filter: brightness(1.2);
+  transition: transform 0.2s ease;
+}
+
+
