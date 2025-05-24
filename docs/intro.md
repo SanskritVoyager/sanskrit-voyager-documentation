@@ -10,6 +10,8 @@ slug: /
 
 Welcome to **[Sanskrit Voyager](https://sanskritvoyager.com)**, a web application to explore the *Sanskrit* literature.
 
+When I was making research, I was spending about half of my time retrieving texts or doing tasks that should have been automated. I also noticed that some of my favorite books were entirely unaccessible to almost everyone. I sincerely hope the application may help on both fronts. 
+
 You can start reading, or you can try *[the application directly](https://sanskritvoyager.com)*.
 
 ---
