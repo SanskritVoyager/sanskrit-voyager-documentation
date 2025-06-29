@@ -6,12 +6,7 @@ sidebar_position: 7
 
 Welcome to **Sanskrit Voyager**, a web application to explore the Sanskrit literature. 
 
-The application was made with the following two goals: 
-
-1. making the original Sanskrit text accessible to interested reader with no knowledge of the language;
-2. creating digital tools that can be used by researchers to explore the literature more easily. 
-
-*The website and the documentation are still in **beta**. If you find any bug or problems, please report them* 
+When I was making research, I was spending about half of my time retrieving texts or doing tasks that should have been automated. I also noticed that some of my favorite books were entirely unaccessible to almost everyone. I sincerely hope the application may help on both fronts. 
 
 This is my personal project, I hope you enjoyed the interface and the experience. 
 

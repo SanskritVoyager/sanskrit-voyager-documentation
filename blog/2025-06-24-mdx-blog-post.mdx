@@ -1,0 +1,68 @@
+---
+slug: update-mobile-interface
+title: Update on the Mobile Interface
+authors: [giacomo]
+tags: [SanskritVoyager, Interface, Mobile]
+---
+
+
+### Updated the mobile interface
+
+
+
+A lot of people I talked with tend to assume people would use an application for Sanskrit mainly on desktop or tablet, but I feel like it isn't true. Regardless of my advice that the application works better for desktop, about half the page views of the website come from mobile. 
+I use the application a lot myself on mobile for fast dictionary lookups and just to find exact quotes and references. 
+
+As such I felt like I should have embraced the mobile interface a bit more. The application is already built with 3.5 breakpoints already (small mobile, mobile, tablet and desktop), which are bundled in a React Context, but I wanted to go a bit further, to let the user feel like the application was specifically designed for mobile usage. 
+
+In that sense, I added a new component (a resizable panel to display the word information) and a custom hook (hide the header on scrolldown) to improve the mobile usability. 
+
+They are quite standard components -- but as usual adapting them to the application in a way that is both fluid and computationally inexpensive required a few hours. 
+
+### Resizable panel
+
+I swapped the old division in half for the screen for the additional word info with a resizable panel that can be increased or decreased in size. 
+
+My first iterations with a freely movable panel were quite impractical, as the panel was more of a drag than an actual help. The first iterations were also not responsive enough, and 
+
+ Then I noticed that both Claude and Google Maps were using resizable panels with specified breakpoints. 
+
+The panel detects the directions of the movement even on quick flicks and automatically moves into the direction of the flow. It is also possible to open or close it with a double tap. 
+
+I was quite lucky in finding some working code for the double tap on Stack Overflow. 
+
+At the same time there were so many thing to decide, - the number of breakpoints, - which are passed as a prop. The speed of the transition, which uses a callback function to calculate the distance, and the animation for the transition. 
+
+
+
+### Header disappearing on scroll down. 
+
+
+I clearly tried to make an hook to let the header disappear on scroll down first with Claude. I was surprised, - given how common it is as a task - to see it fail so miserably. 
+
+My second attempt was to check in the Mantine Documentation, which had a useHeadroom hook, - which clearly was not working as well as it used useWindowScroll. I didn't want to attach an event handler for the whole window, but just to the book panel. 
+
+Once I got myself into adapting the code from Mantine it was relatively easy to implement. All I add to do was to check when the book panel is loaded, attach a reference to it, - and pass it to the Mantine functions. 
+
+
+
+
+
+
+Blog posts support [Docusaurus Markdown features](https://docusaurus.io/markdown-features), such as [MDX](https://mdxjs.com/).
+
+:::tip
+
+Use the power of React to create interactive blog posts.
+
+:::
+
+{/* truncate */}
+
+For example, use JSX to create an interactive button:
+
+```js
+<button onClick={() => alert('button clicked!')}>Click me!</button>
+```
+
+<button onClick={() => alert('button clicked!')}>Click me!</button>
