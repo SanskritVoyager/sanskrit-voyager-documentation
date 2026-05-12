@@ -1,7 +1,7 @@
 ---
 id: sources
 title: Sources
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 This section describes the sources used in building the application. 
